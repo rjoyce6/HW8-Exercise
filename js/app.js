@@ -4,7 +4,7 @@ document.getElementById('idText1').innerHTML = "<p> Welcome to this page</p>";
 
 // step 4. Making a string variable and using that to put some text into an H1 using JavaScript.
 var strg = 'Hello';
-document.getElementById('idText2').innerHTML = "<h1>"+strg+"</h1>";
+document.getElementById('idText2').innerHTML = strg;
 
 // Step 5. Making a function that takes a user's input (value) and then console.logs the value.
 // Initializing the function (make it start) when you click a button.
@@ -30,11 +30,10 @@ var student1 = {
 }
 
 for (var i in student1){
-  console.log(i + ":" +student1[i]);
+  console.log(i + ":" + student1[i]);
 }
 
-
-//step 8.
+//step 8.Create an array with multiple objects, each with multiple properties. Use a for loop to console.log the various properties.
 var student2 = {
   name: 'Josh',
   grade: 'A+',
@@ -43,5 +42,6 @@ var student2 = {
 
 var arrStudent = [student1, student2];
 
-for (var i =0; i < arrStudent.length; i++)
-console.log(arrStudent[i].grade)
+for (var i =0; i < arrStudent.length; i++){
+  console.log("Grade Student" + (i+1)+ ":" + arrStudent[i].grade)
+}
